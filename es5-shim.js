@@ -1100,7 +1100,7 @@ if (doesNotParseY2KNewYear || acceptsInvalidDates || !supportsExtendedYears) {
                 date = NativeDate.apply(this, arguments);
             }
             // Prevent mixups with unfixed Date object
-            defineProperties(date, { constructor: DateShim }, true);
+            //defineProperties(date, { constructor: DateShim }, true);
             return date;
         };
 
